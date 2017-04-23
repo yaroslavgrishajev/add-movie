@@ -1,0 +1,106 @@
+.add-movie {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    bottom: -22px;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #FF424F;
+}
+
+.add-movie i.material-icons {
+    position: relative;
+    top: 10px;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(45, 45, 45, 0.8);
+}
+
+.App .overlay.add-movie-overlay {
+    position: fixed;
+    z-index: 1;
+}
+
+.add-movie-container {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-left: -260px;
+    margin-top: -210px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    color: #222;
+}
+
+.overlay .add-movie-container .add-movie-form {
+    width: 100%;
+    text-align: left;
+}
+
+.overlay .add-movie-container .add-movie-form legend {
+    text-align: center;
+}
+
+.overlay .add-movie-container .add-movie-form .mui-textfield--float-label>label {
+    overflow: hidden;
+}
+
+.overlay .add-movie-container .add-movie-form .mui-textfield>input:focus,
+.overlay .add-movie-container .add-movie-form .mui-textfield>textarea:focus {
+    border-color: #FF424F;
+}
+
+.overlay .add-movie-container .add-movie-form .mui-textfield>input:focus~label,
+.overlay .add-movie-container .add-movie-form .mui-textfield>textarea:focus~label {
+    color: #FF424F;
+}
+
+.suggestion .hidden {
+    display: none;
+}
+
+.autocomplete {
+    position: relative;
+}
+
+.autocomplete input {
+    padding: 5px;
+    margin: 0 30px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.autocomplete input:focus {
+    outline: none;
+}
+
+.autocomplete input::-webkit-input-placeholder {
+    color: white;
+}
+
+.autocomplete input::-moz-placeholder {
+    color: white;
+}
+
+.autocomplete input:-ms-input-placeholder {
+    color: white;
+}
+
+.autocomplete input:-moz-placeholder {
+    color: white;
+}

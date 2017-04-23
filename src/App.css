@@ -1,0 +1,156 @@
+.App {
+  text-align: center;
+}
+
+.App .App-header {
+  background-color: #FF424F;
+  height: 50px;
+  color: white;
+  position: relative;
+  align-items: center;
+}
+
+.App .App-header .App-brand {
+  background-color: #F83745;
+  width: 240px;
+  align-items: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.App .App-header .App-brand .logo-container {
+  width: 100%;
+  position: "relative";
+}
+
+.App .App-header .App-brand .logo-container .logo-icon {
+  position: relative;
+  top: 5px;
+  margin-right: 8px;
+}
+
+.App .App-header .add-movie i.material-icons {
+  position: relative;
+  top: 10px;
+}
+
+.App .App-menu {
+  background-color: #191C1F;
+  min-width: 240px;
+  padding-top: 50px;
+}
+
+.App .App-menu .menu-item {
+  padding: 16px 6px 16px 32px;
+  font-size: 18px;
+  text-align: center;
+  color: #9E9E9E;
+  position: relative;
+}
+
+.App .App-menu .menu-item .menu-icon {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  color: #616161;
+}
+
+.App .App-menu .menu-item.selected {
+  background-color: #222B31;
+}
+
+.App .App-content {
+  padding: 90px 50px 50px;
+}
+
+.App .App-content h2.headings {
+  font-size: 32px;
+}
+
+.App .App-content .App-content-movies {
+  padding: 25px;
+}
+
+.App .App-content .App-content-movies .movie {
+  width: 150px;
+  height: 290px;
+  margin: 25px;
+  position: relative;
+  color: #9E9E9E;
+}
+
+.App .App-content .App-content-movies .movie .movie-poster {
+  background-image: url("./imgs/movie-placeholder.jpg");
+  width: 150px;
+  height: 200px;
+  background-position: center center;
+  border: 1px solid #555;
+}
+
+.App .App-content .App-content-movies .movie .movie-rating {
+  position: absolute;
+  left: 50%;
+  width: 44px;
+  height: 20px;
+  padding: 8px;
+  display: inline-block;
+  margin-left: -22px;
+  top: -8px;
+  background-color: #FDD835;
+  color: #424242;
+  line-height: 4px;
+  border-radius: 12px;
+}
+
+.App .App-content .App-content-movies .movie .movie-title {
+  font-size: 16px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.App .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(45, 45, 45, 0.8);
+}
+
+.App .overlay .add-movie-container {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-left: -260px;
+  margin-top: -210px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  color: #222;
+}
+
+.App .overlay .add-movie-container .add-movie-form {
+  width: 100%;
+  text-align: left;
+}
+
+.App .overlay .add-movie-container .add-movie-form legend {
+  text-align: center;
+}
+
+.App .overlay .add-movie-container .add-movie-form .mui-textfield--float-label>label {
+  overflow: hidden;
+}
+
+.App .overlay .add-movie-container .add-movie-form .mui-textfield>input:focus,
+.App .overlay .add-movie-container .add-movie-form .mui-textfield>textarea:focus {
+  border-color: #FF424F;
+}
+
+.App .overlay .add-movie-container .add-movie-form .mui-textfield>input:focus~label,
+.App .overlay .add-movie-container .add-movie-form .mui-textfield>textarea:focus~label {
+  color: #FF424F;
+}
